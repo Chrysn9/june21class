@@ -1,0 +1,41 @@
+1  service docker start
+    2  useradd dockeradmin
+    3  passwd dockeradmin
+    4  id dockeradmin
+    5  id -nG dockeradmin
+    6  useradd -aG docker dockeradmin
+    7  j
+    8  clear
+    9  usermod -aG dockeradmin
+   10  usermod -aG docker dockeradmin
+   11  id -nG dockeradmin
+   12  docker images
+   13  clear
+   14  docker pull nginx
+   15  docker pull nginx:alpine
+   16  docker images
+   17  docker run --name=nginx-container -p 8080:80 -d nginx:lastest
+   18  docker run --name=nginx-container -p 8080:80 -d nginx:latest
+   19  docker ps -a
+   20  clear
+   21  docker ps -a
+   22  docker exec -t df2a744c6ed6 sh
+   23  docker exec -it df2a744c6ed6 sh
+   24  mkdir DevOps && cd DevOps
+   25  vi Dockerfile
+   26  vi index.html
+   27  vi Dockerfile
+   28  ls -l54rfc 
+   29  docker built -t nginx-image:1.0.1 .
+   30  docker build -t nginx-image:1.0.1 .
+   31  vi Dockerfile
+   32  docker build -t nginx-image:1.0.1 .
+   33  vi Dockerfile
+   34  docker build -t nginx-image:1.0.1 .
+   35  docker images
+   36  docker run --name=nginx02 -p 8081:80 -d nginx-image:1.0.1
+   37  docker ps
+   38  clear
+   39  cker ps
+   40  docker ps
+   41  docker exec -it ce5e3d95ad13 sh
